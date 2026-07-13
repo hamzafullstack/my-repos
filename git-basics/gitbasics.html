@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Git Basics - The Odin Project</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#0f172a;
+    color:#fff;
+    line-height:1.7;
+    padding:30px;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+}
+
+.card{
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:15px;
+    padding:20px;
+    margin:20px 0;
+    box-shadow:0 0 20px rgba(0,170,255,.25);
+    animation:fadeUp .7s ease;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 30px #00bfff;
+}
+
+h1,h2{
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+
+code{
+    background:#111827;
+    color:#7dd3fc;
+    padding:2px 6px;
+    border-radius:5px;
+}
+
+pre{
+    background:#111827;
+    padding:15px;
+    border-radius:10px;
+    overflow:auto;
+    margin-top:10px;
+}
+
+ul{
+    padding-left:20px;
+}
+
+@keyframes fadeUp{
+from{opacity:0;transform:translateY(20px);}
+to{opacity:1;transform:translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>📚 Git Basics (The Odin Project)</h1>
+
+<div class="card">
+<h2>🎯 Lesson Objectives</h2>
+
+<ul>
+<li>Create a GitHub repository.</li>
+<li>Clone a repository.</li>
+<li>Track changes with Git.</li>
+<li>Commit project snapshots.</li>
+<li>Push code to GitHub.</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>⚙️ Basic Git Workflow</h2>
+
+<pre>
+git clone &lt;repo-url&gt;
+git status
+git add .
+git commit -m "Message"
+git push
+git log
+</pre>
+
+</div>
+
+<div class="card">
+<h2>💡 Important Concepts</h2>
+
+<ul>
+<li><b>Repository:</b> Your project.</li>
+<li><b>Clone:</b> Download repository.</li>
+<li><b>Stage:</b> Prepare changes before commit.</li>
+<li><b>Commit:</b> Save a project snapshot.</li>
+<li><b>Push:</b> Upload commits to GitHub.</li>
+<li><b>Origin:</b> Remote GitHub repository.</li>
+<li><b>Main:</b> Default branch.</li>
+</ul>
+
+</div>
+
+<div class="card">
+<h2>⭐ Best Practices</h2>
+
+<ul>
+<li>Commit small changes.</li>
+<li>Write meaningful commit messages.</li>
+<li>Check <code>git status</code> frequently.</li>
+<li>Edit locally, then push to GitHub.</li>
+<li>Push your work regularly.</li>
+</ul>
+
+</div>
+
+<div class="card">
+<h2>📝 Summary</h2>
+
+<p>
+Git helps track code changes, while GitHub stores your code online.
+The standard workflow is:
+</p>
+
+<pre>
+Clone
+ ↓
+Edit
+ ↓
+Status
+ ↓
+Add
+ ↓
+Commit
+ ↓
+Push
+</pre>
+
+</div>
+
+</div>
+
+</body>
+</html>
