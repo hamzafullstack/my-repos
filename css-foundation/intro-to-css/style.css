@@ -1,0 +1,28 @@
+/* style.css */
+div {
+    color: rgb(243, 240, 255);
+    background-color: brown;
+}
+/* for class we use . dot */
+.text {
+    color:coral;
+}
+/* for id we use # hash */
+#myid {
+    background-color: antiquewhite;
+}
+/* group selectors */
+.read, .unread {
+    color: aliceblue;
+    background-color: black;
+}
+/* chaining selectors. */
+.subsection.header {
+color: red;
+}
+/* chaining */
+.subsection#preview {
+    color: blueviolet;
+}
+/* .ancestors .contents {
+    /* some declerations * */
