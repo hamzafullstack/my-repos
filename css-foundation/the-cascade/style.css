@@ -17,3 +17,56 @@
 .main .list{
     color: red;
 }
+#subsection-one {
+    background-color: yellow;
+    color: blue;
+}
+.main-one #subsection-one {
+    color: red;
+}
+
+/* understand this */
+/* rule 1 */
+/* Rule 1 uses a chaining selector (no space) */
+.class.second-class {
+  font-size: 12px;
+}
+
+/* rule 2 */
+/* rule 2 uses a descendant combinator (the empty space). */
+.class .second-class {
+  font-size: 24px;
+}
+
+.class > .second-class {
+  font-size: 24px;
+}
+/* class > child combinator */
+/* (>), this does not change the specificity value. */
+
+/* rule 1 */
+* {
+  color: black;
+}
+/* rule 1 uses the universal selector (*) which has no specificity value. */
+/* styles.css */
+
+#parent {
+  color: red;
+}
+
+.child {
+  color: blue;
+}
+/* Despite the parent element having a higher specificity with an ID, the child element would have the color: blue style applied since that declaration directly targets it, while color: red from the parent is only inherited. */
+
+/* rule order -- Whichever rule was the last defined is the winner. */
+/* styles.css */
+
+.alert {
+  color: red;
+}
+
+.warning {
+  color: yellow;
+}
