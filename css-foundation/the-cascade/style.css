@@ -1,0 +1,19 @@
+.subsection{
+    color: blueviolet;
+}
+
+/* rule two */
+.main .list {
+    color: red;
+}
+/* but rule 2 is more specific because it is using more class selectors, */
+
+/* rule1 */
+#subsection {
+    color: blue;
+}
+/* rule one will win because its an ID  */
+/* rule two  */
+.main .list{
+    color: red;
+}
