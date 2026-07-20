@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspecting HTML and CSS | Notes</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #f4f4f4;
+            color: #333;
+            line-height: 1.7;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 35px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #1e3a8a;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #2563eb;
+            margin-top: 35px;
+            margin-bottom: 12px;
+            border-left: 5px solid #2563eb;
+            padding-left: 10px;
+        }
+
+        h3 {
+            margin-top: 20px;
+            color: #444;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        ul {
+            margin-left: 25px;
+            margin-top: 10px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        code {
+            background: #eee;
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: #c7254e;
+        }
+
+        pre {
+            background: #272822;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ccc;
+        }
+
+        th {
+            background: #2563eb;
+            color: white;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        .note {
+            background: #e8f5e9;
+            border-left: 5px solid #4caf50;
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        .summary {
+            background: #fff8dc;
+            border-left: 5px solid orange;
+            padding: 15px;
+            margin-top: 25px;
+        }
+
+        hr {
+            margin: 35px 0;
+            border: none;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Inspecting HTML and CSS</h1>
+
+<p>
+Developer Tools (DevTools) allow you to inspect and test the HTML and CSS of any webpage directly in your browser. It is one of the most useful tools for debugging websites.
+</p>
+
+<hr>
+
+<h2>Open DevTools</h2>
+
+<h3>Method 1</h3>
+
+<ul>
+    <li>Press <code>F12</code></li>
+</ul>
+
+<h3>Method 2</h3>
+
+<ul>
+    <li>Right-click anywhere on the webpage.</li>
+    <li>Click <strong>Inspect</strong>.</li>
+</ul>
+
+<hr>
+
+<h2>Main Panels</h2>
+
+<h3>1. Elements Panel</h3>
+
+<p>
+Displays the HTML structure of the webpage.
+</p>
+
+<ul>
+    <li>View HTML elements</li>
+    <li>Expand and collapse tags</li>
+    <li>Select any element</li>
+</ul>
+
+<pre>
+&lt;body&gt;
+    &lt;h1&gt;Hello World&lt;/h1&gt;
+    &lt;p&gt;Welcome!&lt;/p&gt;
+&lt;/body&gt;
+</pre>
+
+<h3>2. Styles Panel</h3>
+
+<p>
+Displays the CSS applied to the selected element.
+</p>
+
+<ul>
+    <li>View CSS rules</li>
+    <li>Edit CSS live</li>
+    <li>Add new CSS properties</li>
+    <li>Disable CSS temporarily</li>
+</ul>
+
+<hr>
+
+<h2>Selecting an Element</h2>
+
+<ul>
+    <li>Click the <strong>Select Element</strong> icon.</li>
+    <li>Hover over any webpage element.</li>
+    <li>Click the element.</li>
+    <li>DevTools highlights its HTML and CSS.</li>
+</ul>
+
+<hr>
+
+<h2>Strikethrough CSS</h2>
+
+<pre>
+color: red;
+color: blue;
+</pre>
+
+<p>
+The browser will apply:
+</p>
+
+<pre>
+color: blue;
+</pre>
+
+<div class="note">
+<strong>Meaning:</strong><br>
+The crossed-out CSS property has been overridden by another rule and is not currently applied.
+</div>
+
+<hr>
+
+<h2>Live CSS Editing</h2>
+
+<p>Before:</p>
+
+<pre>
+font-size: 16px;
+</pre>
+
+<p>Change to:</p>
+
+<pre>
+font-size: 30px;
+</pre>
+
+<p>
+The webpage updates instantly.
+</p>
+
+<div class="note">
+Changes made in DevTools are temporary. Refreshing the page restores the original CSS.
+</div>
+
+<hr>
+
+<h2>Why Use DevTools?</h2>
+
+<ul>
+    <li>Debug HTML</li>
+    <li>Debug CSS</li>
+    <li>Test new styles</li>
+    <li>Fix layout issues</li>
+    <li>Inspect any website</li>
+    <li>Learn from other developers</li>
+</ul>
+
+<hr>
+
+<h2>Keyboard Shortcut</h2>
+
+<table>
+    <tr>
+        <th>Action</th>
+        <th>Shortcut</th>
+    </tr>
+
+    <tr>
+        <td>Open DevTools</td>
+        <td>F12</td>
+    </tr>
+</table>
+
+<hr>
+
+<h2>Knowledge Check</h2>
+
+<h3>How do you inspect an element?</h3>
+
+<ul>
+    <li>Right-click → Inspect</li>
+    <li>Press F12</li>
+    <li>Use the Select Element tool</li>
+</ul>
+
+<h3>What does a strikethrough CSS rule mean?</h3>
+
+<p>
+The CSS property has been overridden and is not currently applied.
+</p>
+
+<h3>Can you edit CSS in DevTools?</h3>
+
+<p>
+Yes. Changes appear immediately, but they are temporary and disappear after refreshing the page.
+</p>
+
+<hr>
+
+<h2>Quick Summary</h2>
+
+<div class="summary">
+<ul>
+    <li>DevTools is used for debugging websites.</li>
+    <li>Elements panel shows HTML.</li>
+    <li>Styles panel shows CSS.</li>
+    <li>Open DevTools using <strong>F12</strong> or <strong>Inspect</strong>.</li>
+    <li>Use the Select Element tool to inspect webpage elements.</li>
+    <li>Strikethrough CSS means the rule has been overridden.</li>
+    <li>CSS edits in DevTools are temporary.</li>
+</ul>
+</div>
+
+</div>
+
+</body>
+</html>
