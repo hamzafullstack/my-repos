@@ -1,0 +1,19 @@
+/* div {
+    flex: 1;
+} */
+/* In the above code, flex: 1 equates to: flex-grow: 1, flex-shrink: 1, flex-basis: 0. */
+
+.flex-container div {
+    display: flex;
+    background: burlywood;
+    border: 4px solid brown;
+    height: 100px;
+    width: 250px;
+    flex: 1 1 0%;
+}
+/* only div.two is selected here */
+.flex-container .two {
+    flex-shrink: 0%;
+}
+/* The default shrink factor is flex-shrink: 1, */
+/* If you do not want an item to shrink then you can specify flex-shrink: 0; */
